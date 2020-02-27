@@ -7,15 +7,16 @@ import (
 	"math/big"
 	"strings"
 
+	"github.com/caarlos0/env/v6"
+
 	"github.com/hrharder/go-gas"
 
-	"github.com/caarlos0/env/v6"
+	"github.com/hrharder/gas-token-exploration/contracts"
 
 	"github.com/ethereum/go-ethereum"
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/ethclient"
-	"github.com/hrharder/gas-token-exploration/contracts"
 )
 
 var NULL_ADDRESS = common.Address{}
