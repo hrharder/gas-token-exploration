@@ -22,8 +22,8 @@ go run main.go
 View the results:
 ```
 UNISWAP PRICES for 100 token(s)
-- price to buy 1 gas tokens on uniswap (in wei):        3341219422754341
-- price to sell 1 gas tokens on uniswap (in wei):       3316452665934509
+- price to buy gas tokens on uniswap (in wei):          3335773164484541
+- price to sell gas tokens on uniswap (in wei):         3311050645823320
 
 MINT PRICES for 100 token(s) direct from contract
 - buy gas token by minting (in wei @ 1 gwei):           3702884000000000
