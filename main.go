@@ -78,7 +78,7 @@ func main() {
 	fmt.Printf("- price to sell gas tokens on uniswap (in wei):\t\t%s\n", sellPrice.String())
 	fmt.Println()
 
-	// estimate gas cost of minting 1 gas token (100 base units)
+	// estimate gas cost of minting 1 gas token (user specified amount)
 	gasTokenABI, err := abi.JSON(strings.NewReader(contracts.GasToken2ABI))
 	check(err)
 	callData, err := gasTokenABI.Pack("mint", big.NewInt(cfg.TestAmount))
