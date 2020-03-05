@@ -83,7 +83,7 @@ func main() {
 	check(err)
 	callData, err := gasTokenABI.Pack("mint", big.NewInt(cfg.TestAmount))
 	check(err)
-	gasCost, err := client.EstimateGas(context.Background(), ethereum.CallMsg{From: NULL_ADDRESS, To: &cfg.gasToken, Data: callData})
+	gasCost, err := client.EstimateGas(context.Background(), ethereum.CallMsg{From: common.HexToAddress("0x742d35Cc6634C0532925a3b844Bc454e4438f44e"), To: &cfg.gasToken, Data: callData})
 	check(err)
 
 	// fetch gas prices to generate real-world ETH costs of minting GST2
